@@ -24,9 +24,6 @@ header {
 .max__width {
     width: 1340px;
 }
-.flex__col {
-
-}
 /***** End GERAL *****/
 
 
@@ -206,6 +203,13 @@ main {
 }
 .imagem__propaganda__inicial {
     padding-top: 124px;
+}
+.grupo__carrossel {
+    position: absolute;
+    height: 12px;
+    width: 78px;
+    bottom: 53px;
+    margin: 0 50%;
 }
 /***** End Section *****/
 
