@@ -6,21 +6,29 @@
 
 
 
+
 /***** VARIÁVEIS *****/
 :root {
     /* CORES */
-    --primary: #c92071;
     --dark-gray: #1f1f1f;
     --dark-gray-2: #474747;
     --dark-gray-3: #666666;
     --light-gray: #8f8f8f;
     --light-gray-2: #CCCCCC;
     --light-gray-3: #F5F5F5;
-    --warning: #F6AA1C;
+    --primary: #c92071;
+    --secondary: #b5b6f2;
     --erro: #EE4266;
+    --success: #52ca76;
+    --warning: #F6AA1C;
+    --primary-gradient: ;
+    --secondary-gradient: linear-gradient(180deg, rgba(66, 0, 255, 0.25) -40.67%, rgba(255, 255, 255, 0.00) 60%);
     --white: #fff;
+    --Tertiary: #991956;
 }
 /***** End VARIÁVEIS *****/
+
+
 
 
 
@@ -29,7 +37,6 @@
 * {
     font-family: "Inter", sans-serif;
     letter-spacing: 0.75px;
-    color: var(--dark-gray-2);
 }
 body {
     align-items: center;
@@ -301,13 +308,14 @@ main {
     font-weight: 700;
     line-height: 24px;
 }
-.informacoes__propaganda__inicial h4 {
-    font-size: 64px;
-    color: #1f1f1f;
+.informacoes__propaganda__inicial h1 {
+    font-family: "Inter", sans-serif;
     font-weight: 800;
+    font-size: 64px;
+    letter-spacing: 1px;
     line-height: 66px;
 }
-.informacoes__propaganda__inicial h4::after {
+.informacoes__propaganda__inicial h1::after {
     position: relative;
     content: "\01f525";
     font-family: "Noto Color Emoji", sans-serif;
@@ -487,7 +495,7 @@ main {
     flex-direction: column;
     width: 292px;
     height: 321px;
-    background-color: var(--withe)
+    background-color: var(--white);
 }
 .background__card__produto .aviso__desconto {
     position: absolute;
@@ -548,7 +556,7 @@ main {
     width: 466px;
     height: 466px;
     border-radius: 466px;
-    background: linear-gradient(180deg, rgba(66, 0, 255, 0.25) -40.67%, rgba(255, 255, 255, 0.00) 60%);
+    background: var(--secondary-gradient);
 }
 .ofertas__imagem {
     width: 967px;
@@ -595,9 +603,48 @@ main {
 /***** RODAPÉ *****/
 footer {
     display: flex;
+    flex-direction: column;
+    padding: 72px 100px 0 100px;
     justify-content: center;
     height: 454px;
     width: 100%;
-    background-color: #1f1f1f;
+    background-color: var(--dark-gray);
+}
+.caixa__footer {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid yellow;
+}
+.footer__superior {
+    display: flex;
+    flex-direction: row;
+}
+.footer__marca {
+    display: flex;
+    flex-direction: column;
+}
+.footer__marca img {
+    width: 253px;
+    height: 44px;
+    margin-bottom: 35px;
+}
+.footer__marca p {
+    font-size: 16px;
+    color: var(--white);
+    letter-spacing: none;
+    line-height: 26px;
+    width: 307px;
+    height: 78px;
+    margin-bottom: 40px;
+}
+.footer__marca .redes__footer {
+    display: flex;
+    justify-content: space-between;
+    width: 124.12px;
+    height: 20.53px;
+}
+.redes__footer a img {
+    height: 20.53px;
+    width: auto;
 }
 /***** End RODAPÉ *****/
