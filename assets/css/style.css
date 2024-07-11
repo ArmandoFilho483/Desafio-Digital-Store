@@ -54,6 +54,9 @@ header {
     width: 1240px;
     height: auto;
 }
+a {
+    color: var(--dark-gray-2);
+}
 /***** End GERAL *****/
 
 
@@ -605,15 +608,21 @@ footer {
     display: flex;
     flex-direction: column;
     padding: 72px 100px 0 100px;
-    justify-content: center;
+    align-items: center;
     height: 454px;
     width: 100%;
     background-color: var(--dark-gray);
+    color: var(--white);
+}
+footer article ul li a {
+    color: var(--white);
+    font-size: 16px;
+    letter-spacing: 0;
+    font-weight: 300;
 }
 .caixa__footer {
     display: flex;
     flex-direction: row;
-    border: 1px solid yellow;
 }
 .footer__superior {
     display: flex;
@@ -646,5 +655,48 @@ footer {
 .redes__footer a img {
     height: 20.53px;
     width: auto;
+}
+.footer__informacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    height: 278px;
+    width: 135px;
+    margin-left: 205px;
+}
+.footer__informacoes ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer__categorias {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    height: 240px;
+    width: 96px;
+    margin-left: 102px;
+}
+.footer__categorias ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer__contato {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    height: 168px;
+    width: 233px;
+    margin-left: 168px;
+    font-weight: 300;
+}
+.linha__footer {
+    margin-top: 34px;
+    border-bottom: 1px solid var(--white);
+    width: 1240px;
+}
+.footer__inferior {
+    margin-top: 23px;
 }
 /***** End RODAPÉ *****/
